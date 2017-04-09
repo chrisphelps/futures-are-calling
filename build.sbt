@@ -10,5 +10,7 @@ lazy val root = (project in file(".")).
     name := "Hello",
     libraryDependencies += scalaTest % Test,
 
-    libraryDependencies += "com.twitter" %% "util-core" % "6.42.0"
+    libraryDependencies += "com.twitter" %% "util-core" % "6.42.0",
+    libraryDependencies += "com.google.guava" % "guava" % "19.0", // 21 is newest
+    libraryDependencies += "com.gilt" %% "gfc-guava" % "0.2.5"
   )
